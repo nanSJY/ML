@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../ML/.idea/ML.iml" filepath="$PROJECT_DIR$/../ML/.idea/ML.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/MLAlg.iml" filepath="$PROJECT_DIR$/.idea/MLAlg.iml" />
       <module fileurl="file://$PROJECT_DIR$/../ML_Alg/.idea/ML_Alg.iml" filepath="$PROJECT_DIR$/../ML_Alg/.idea/ML_Alg.iml" />
       <module fileurl="file://$PROJECT_DIR$/../MachineLearningAlgorithm/.idea/MachineLearningAlgorithm.iml" filepath="$PROJECT_DIR$/../MachineLearningAlgorithm/.idea/MachineLearningAlgorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/../sklearn/.idea/sklearn.iml" filepath="$PROJECT_DIR$/../sklearn/.idea/sklearn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../tf/.idea/tf.iml" filepath="$PROJECT_DIR$/../tf/.idea/tf.iml" />
     </modules>
   </component>
 </project>

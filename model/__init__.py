@@ -1,3 +1,5 @@
 from perceptron import Perceptron
+from linearRegression import LinearRegression
 
-__all__ = ['Perceptron']
+__all__ = ['Perceptron',
+           'linearRegression']
