@@ -10,7 +10,7 @@ class LinearRegression:
     def cost(self, X, y, w):
         return np.sum((X*w - y)**2)/2
 
-    def fit(self, X, y, alpha=0.004, n_inter=5000, coef_init=None, intercept_init=None):
+    def fit(self, X, y, alpha=0.01, n_inter=100, coef_init=None, intercept_init=None):
         [m, n] = X.shape
         if y.shape[0] != m:
             raise ValueError('X.shape[1] should equal to y.shape')
@@ -22,15 +22,23 @@ class LinearRegression:
 
         ones = np.ones([m, 1])
         X = np.column_stack([ones, X])
-        w = np.column_stack((intercept_init,coef_init))
-
-        # normal equation
-        # w = np.linalg.inv(X.T.dot(X)).dot(X.T).dot(y)
+        theta = np.row_stack([intercept_init, coef_init])
 
         for inter in range(n_inter):
+            error_item = np.zeros(shape=(m, 1))
+            for i in range(m):
+                error_item[i] = (y[i] - X[i, :].dot(theta))
             for j in range(n+1):
                 grad_j = 0
                 for i in range(m):
-                    grad_j -= (y[i] - w.dot(X[i, :].T))*X[i, j]
-                w[0, j] -= (alpha*grad_j)
-        return w
+                    grad_j += error_item[i]*X[i, j]
+                theta[j] += grad_j*alpha
+
+        # normal equation (m > n)
+        # theta = np.linalg.inv(X.T.dot(X)).dot(X.T).dot(y)
+
+        self.intercept_ = theta[0]
+        self.coef_ = theta[1]
+        return
+
+
