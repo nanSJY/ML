@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="beb3f347-cd1f-4d50-a7d2-20f7cab8672f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NaiveBayes/NaiveBayes.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NaiveBayes/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NaiveBayes/test_multinomialNB.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mnist/a.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/knn/KdTree.py" afterPath="$PROJECT_DIR$/kNN/KdTree.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/knn/__init__.py" afterPath="$PROJECT_DIR$/kNN/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/knn/k_nearest_neighbor.py" afterPath="$PROJECT_DIR$/kNN/k_nearest_neighbor.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MachineLearning.iml" afterPath="$PROJECT_DIR$/.idea/MachineLearning.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/NaiveBayes/test_multinomialNB.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/logistic regression/__init__.py" afterPath="$PROJECT_DIR$/LogisticRegression/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/logistic regression/logistic_regression.py" afterPath="$PROJECT_DIR$/LogisticRegression/logistic_regression.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mnist/mnist_cnn.py" afterPath="$PROJECT_DIR$/mnist/mnist_cnn.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,7 +18,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="logistic_regression.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logistic regression/logistic_regression.py">
+        <entry file="file://$PROJECT_DIR$/LogisticRegression/logistic_regression.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="158">
               <caret line="45" column="26" lean-forward="true" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
@@ -61,16 +54,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="201">
               <caret line="207" column="0" lean-forward="false" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_multinomialNB.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NaiveBayes/test_multinomialNB.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -211,7 +194,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="logistic regression" />
+              <option name="myItemId" value="LogisticRegression" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -570,9 +553,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20269541" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20269541" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3347413" sideWeight="0.502965" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26082367" sideWeight="0.49811321" order="6" side_tool="false" content_ui="tabs" />
@@ -954,7 +936,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logistic regression/logistic_regression.py">
+    <entry file="file://$PROJECT_DIR$/LogisticRegression/logistic_regression.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
           <caret line="45" column="26" lean-forward="true" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
