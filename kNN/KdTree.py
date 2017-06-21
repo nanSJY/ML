@@ -82,6 +82,7 @@ class KdTree(object):
     def distance(self, x, y):
         return np.sum(np.square(x-y))
 
+
 def test():
     aa = [[2,3],[5,4],[9,6],[4,7],[8,1],[7,2]]
     a = np.array(aa)
