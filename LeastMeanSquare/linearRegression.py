@@ -40,5 +40,3 @@ class LinearRegression:
         self.intercept_ = theta[0]
         self.coef_ = theta[1]
         return
-
-

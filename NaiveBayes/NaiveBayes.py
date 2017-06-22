@@ -20,6 +20,7 @@ class MultinomialNB(object):
         self.classes = None
         self.class_prior_prob = None
         self.conditional_prob = None
+        self.n = None
 
     def fit(self, X, y):
         self.calculate_class_prior_prob(y)
@@ -40,10 +41,10 @@ class MultinomialNB(object):
         # {c1: {x0:{value0: 0.2, value1: 0.8}, x1:{},  }, c2:{}, }
         self.conditional_prob = {}
         # [m, n] = X.shape
-        n = len(X[0])
+        self.n = len(X[0])
         for c in self.classes:
             self.conditional_prob[c] = {}
-            for i in range(n):
+            for i in range(self.n):
                 feature = X[np.equal(y, c)][:, i]
                 self.conditional_prob[c][i] = self.calculate_feature_prob(feature)
         return self.conditional_prob
@@ -63,7 +64,7 @@ class MultinomialNB(object):
         prob = []
         for k in range(len(self.classes)):
             pi = 1
-            for j in range(2):
+            for j in range(self.n):
                 pi *= self.conditional_prob[self.classes[k]][j][x[j]]
             prob.append(self.class_prior_prob[k]*pi)
         return self.classes[np.argmax(prob)]
